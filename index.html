@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="שמאות מקרקעין: יוחאי אהרונוב - שמאי מקרקעין">
+    <meta name="keywords" content="יוחאי, אהרונוב, שמאי, מקרקעין, שמאות, נכסים, הערכה, yohai, aharonov, appraisal, assessor, assessment, realestate, נדלן">
+    <meta property="og:image" content="https://assessit.co.il/YohaiAharonov.jpeg"/>
+    <meta property="og:title" content="יוחאי אהרונוב - שמאות מקרקעין"/>
+    <meta property="og:site_name" content="Assess It"/>
+    <meta property="fb:admins" content="1052283872"/>
+    <title>יוחאי אהרונוב: שמאי מקרקעין</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="./floaters.css" type="text/css">
+    <link rel="icon" href="./logoTitle.png" type="image/icon type"> -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content='יוחאי אהרונוב, שמאי מקרקעין. מקצועיות בלתי מתפשרת וקשר אישי עם קהל לקוחותיי מזוגות צעירים ועד לאנשי מקצוע העוסקים בנדל"ן. אומדן שווי שוק לנכסים, הפחתות היטלי השבחה, אומדן והפחתת מיסוי מקרקעין, חוות דעת לבטוחות בנקאיות, שווי זכויות בנכסים המוחזקים על ידי דייר מוגן, דו"ח אפס, תביעות לירידת ערך ועוד.'
+        />
+        <meta
+            name="keywords"
+            content="יוחאי, אהרונוב, שמאי, מקרקעין, שמאות, נכסים, הערכה, yohai, aharonov, appraisal, assessor, assessment, realestate, נדלן"
+        />
+        <meta name="author" content="Yohai Aharonov" />
+        <meta property="og:image" content="https://assessit.co.il/assets/images/admin/YohaiAharonovFull.jpeg" />
+        <meta property="og:locale" content="he_il" />
+        <meta property="og:title" content="יוחאי אהרונוב - שמאי מקרקעין" />
+        <meta property="og:site_name" content="Assess It" />
+        <meta property="fb:admins" content="1052283872" />
+        <title>שמאות מקרקעין: מה שצריך לדעת בעסקאות נדל"ן בישראל | יוחאי אהרונוב</title>
+        <link rel="stylesheet" href="./floaters.css" type="text/css" />
+        <link rel="stylesheet" href="./about.css" />
+        <link rel="stylesheet" href="./op-fields.css" />
+        <link rel="stylesheet" href="./links.css" />
+        <link rel="stylesheet" href="./recommendations.css" />
+        <link rel="stylesheet" href="./contact-us.css" />
+        <link rel="stylesheet" href="./nav.css" />
+        <link rel="stylesheet" href="./search.css" />
+        <link rel="stylesheet" href="./style.css" type="text/css" />
+        <link rel="icon" href="./assets/icons/logoTitle.png" type="image/icon type" />
+    </head>
+    <!-- <body> -->
+    <body onload='history.pushState({}, null, "/");'>
+        <div class="page-container">
+            <header>
+                <img class="logo" src="./assets/icons/logo-5.png" />
+            </header>
+            <main>
+                <div id="searchModal" class="search-modal" style="display: none">
+                    <div id="searchFrame" class="search-frame">
+                        <input
+                            onkeyup="lookForKeywords()"
+                            id="searchKeyword"
+                            class="search-keyword"
+                            placeholder="&#128269; אני יכול לעזור לך לחפש באתר"
+                            type="text"
+                        />
+                        <div id="searchResults" class="search-results"></div>
+                    </div>
+                </div>
+                <div class="contact-fixed">
+                    <a
+                        class="logo-fixed"
+                        href="https://wa.me/972542349294?text=%D7%94%D7%99%D7%99%20%D7%99%D7%95%D7%97%D7%90%D7%99%2C%0A%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%90%D7%9C%D7%99%D7%9A%20%D7%9E%D7%94%D7%90%D7%AA%D7%A8%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A2%D7%96%D7%A8%D7%AA%D7%9A%20%D7%91"
+                    >
+                        <img class="whatsappLogo-fixed primary-nav-btn" src="./assets/icons/whatsapp.png" />
+                    </a>
+                    <!-- <div class="contact-btn">
+                    <div class="cont-btn-container">
+                        <img id="cont-btn-closed" class="cont-btn-closed open-icon-effect" src="./cont-btn-closed-y.png" onclick="scrollToContactInfo()" onmouseenter="openIcon()">
+                    </div>
+                    <img id="cont-btn-open" class="cont-btn-open open-icon-effect" src="./cont-btn-open-y-2.png" onmouseout="closeIcon()" onclick="scrollToContactInfo()">
+                </div> -->
+                    <div class="contact-btn-experimental">
+                        <div class="cont-btn-container-ex primary-nav-btn">
+                            <img
+                                class="cont-btn-closed"
+                                src="./assets/icons/cont-btn-closed-y.png"
+                                onclick="scrollToContactInfoEx();closeNavBar();closeSearchModal();"
+                            />
+                        </div>
+                        <img
+                            class="cont-btn-open-ex primary-nav-btn"
+                            src="./assets/icons/cont-btn-open-l-empty.png"
+                            onclick="scrollToContactInfoEx();closeNavBar();closeSearchModal();"
+                        />
+                    </div>
+
+                    <input
+                        class="nav-checkbox"
+                        id="nav-checkbox"
+                        type="checkbox"
+                        onclick="closeSearchModal()"
+                        checked
+                    />
+                    <label class="nav-btn-closed primary-nav-btn" for="nav-checkbox"></label>
+                    <nav id="navAside" class="navAside noselect">
+                        <div class="nav-border"></div>
+                        <div class="nav-bar-links">
+                            <div class="nav-bar-link about" onclick="navigateSite('aboutContainer');closeNavBar();">
+                                אודות
+                            </div>
+                            <div class="nav-bar-link yt" onclick="navigateSite('yt');closeNavBar();">
+                                טיפ אישי בסרטון קצר
+                            </div>
+                            <div
+                                class="nav-bar-link o-f"
+                                onclick="navigateSite('operation-fields-container-title');closeNavBar();"
+                            >
+                                תחומי התמחות
+                            </div>
+                            <div
+                                class="nav-bar-link r-links"
+                                onclick="navigateSite('links-container-title');closeNavBar();"
+                            >
+                                קישורים רלוונטיים
+                            </div>
+                            <div
+                                class="nav-bar-link recs"
+                                onclick="navigateSite('recommendations-container-title');closeNavBar();"
+                            >
+                                המלצות
+                            </div>
+                        </div>
+                    </nav>
+
+                    <img
+                        class="odd-nav-btn nav-btn-closed primary-nav-btn"
+                        src="assets/icons/srch-btn-y.png"
+                        onclick="toggelSearchModal()"
+                    />
+                </div>
+                <div id="wrapper" class="scroll-wrapper">
+                    <div id="floating-message-1" class="dont-display noselect">
+                        <div class="close-icon" onclick="closeFloatingMessage('floating-message-1')">&#10006;</div>
+                        <p>
+                            "חוויה טובה בהחלט. הגעתי אל יוחאי לאחר שראיתי עליו ביקורות טובות מאוד. הוא מסר לי אינפורמציה
+                            יעילה בטלפון עוד לפני שסגרתי איתו. היה זמין והגיע במהירות כדי לבחון ולצלם את הדירה. לאחר מכן
+                            העביר חוות דעת מקצועית במסגרת הזמנים שהובטחו על ידו. מומלץ!"
+                        </p>
+                        <p>- גלי פ. נתניה</p>
+                        <button onclick="displayRecommendations()">לחוות דעת נוספות</button>
+                    </div>
+                </div>
+                <div id="contentContainer" class="container">
+                    <div id="aboutContainer" class="about-container main-section noselect">
+                        <img class="about-img" src="./assets/images/admin/YohaiAharonov.jpeg" />
+                        <div class="about-info-items noselect">
+                            <div id="about-info-1" class="about-info about-info-1">
+                                <div class="arrow-left arrow" onclick="showNextInfoItemRight(1)">&#8249;</div>
+                                <div class="about-info-content">
+                                    יוחאי אהרונוב, שמאי מקרקעין מוסמך מטעם משרד המשפטים.
+                                    <br />
+                                    <b> מס' רישיון: 4136577 </b>
+                                    <br /><br />
+                                    חבר לשכת שמאי המקרקעין ובעל תואר ראשון בכלכלה ומנהל עסקים מטעם אוניברסיטת אריאל.
+                                </div>
+                                <div class="arrow-right arrow" onclick="showNextInfoItemLeft(1)">&#8250;</div>
+                            </div>
+                            <div id="about-info-2" class="about-info about-info-2">
+                                <div class="arrow-left arrow" onclick="showNextInfoItemRight(2)">&#8249;</div>
+                                <div class="about-info-content">
+                                    באמתחתי ניסיון רב במגוון רחב מאוד של נושאי שמאות, ובין יתר הלקוחות שנהנו משירותיי
+                                    נמנו גם ועדות לתכנון ולבניה, מועצות מקומיות, בנקים, עורכי דין ובתי משפט, יזמים, אנשי
+                                    עסקים ואנשים פרטיים.
+                                </div>
+                                <div class="arrow-right arrow" onclick="showNextInfoItemLeft(2)">&#8250;</div>
+                            </div>
+                            <div id="about-info-3" class="about-info about-info-3">
+                                <div class="arrow-left arrow" onclick="showNextInfoItemRight(3)">&#8249;</div>
+                                <div class="about-info-content">
+                                    לצד המקצועיות הבלתי מתפשרת שלי, אני מאמין מאוד בקשר אישי עם כל קהל לקוחותי, החל
+                                    מזוגות צעירים לקראת רכישת דירתם הראשונה ועד ליזמים ואנשי מקצוע העוסקים בנדל"ן כדרך
+                                    קבע.
+                                </div>
+                                <div class="arrow-right arrow" onclick="showNextInfoItemLeft(3)">&#8250;</div>
+                            </div>
+                            <div id="about-info-4" class="about-info about-info-4">
+                                <div class="arrow-left arrow" onclick="showNextInfoItemRight(4)">&#8249;</div>
+                                <div class="about-info-content">
+                                    מאז שאני זוכר את עצמי חלמתי להתעסק בנדל"ן. כשנחשפתי לראשונה באוניברסיטה למקצוע
+                                    השמאות ישר התאהבתי והבנתי שזה מה שאני רוצה לעשות בחיים.
+                                </div>
+                                <div class="arrow-right arrow" onclick="showNextInfoItemLeft(4)">&#8250;</div>
+                            </div>
+                            <div id="about-info-5" class="about-info about-info-5">
+                                <div class="arrow-left arrow" onclick="showNextInfoItemRight(5)">&#8249;</div>
+                                <div class="about-info-content">
+                                    כבר כמה שנים שאני שמח על הבחירה במקצוע שמאפשר לי להיות חלק משמעותי לכל כך הרבה אנשים
+                                    באחד הצמתים החשובים בחייהם – לעזור, להכווין, לפתוח בפניהם את הזווית המקצועית בכל
+                                    התהליך המכונן הזה, ולא פחות חשוב – לחסוך להם המון כסף, כאב ראש, מפחי נפש מיותרים
+                                    ולאפשר להם להגיע למעוז חפצם בהצלחה.
+                                </div>
+                                <div class="arrow-right arrow" onclick="showNextInfoItemLeft(5)">&#8250;</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div onmousewheel="displayMessage('floating-message-1')" class="main-section noselect">
+                        <h1>ברוכים הבאים</h1>
+                    </div>
+                    <div id="yt" class="youtube-container main-section">
+                        <div class="youtube-info noselect">
+                            <b> אתם לפני רכישה או מכירת נכס? </b>
+                            <br /><br />
+                            הסרטון הזה יעשה לכם סדר ויחסוך לכם המון כסף וכאב ראש.
+                        </div>
+                        <iframe
+                            width="540"
+                            height="315"
+                            src="https://www.youtube.com/embed/rVJFHHH8hc8"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        >
+                        </iframe>
+                    </div>
+                    <div class="main-section noselect" id="operation-fields-container-title">
+                        <h1>תחומי התמחות</h1>
+                    </div>
+                    <div id="operation-fields-container" class="operation-fields-container main-section noselect">
+                        <div class="operation-fields noselect">
+                            <div id="opc-1" class="operation-field-card opc-1" onclick="openOPCModal(1)">
+                                אומדן שווי שוק למגוון נכסים ושימושים כגון מגורים, מסחר, תעשיה, משרדים ועוד...
+                            </div>
+                            <div id="opc-2" class="operation-field-card opc-2" onclick="openOPCModal(2)">
+                                הפחתות היטל השבחה - לפי תיקון 84 לחוק
+                            </div>
+                            <div id="opc-3" class="operation-field-card opc-3" onclick="openOPCModal(3)">
+                                אומדן והפחתת מיסוי מקרקעין
+                            </div>
+                            <div id="opc-4" class="operation-field-card opc-4" onclick="openOPCModal(4)">
+                                חוות דעת לבטוחות בנקאיות
+                            </div>
+                            <div id="opc-5" class="operation-field-card opc-5" onclick="openOPCModal(5)">
+                                שווי זכויות בנכסים המוחזקים ע"י דייר מוגן
+                            </div>
+                            <div id="opc-6" class="operation-field-card opc-6" onclick="openOPCModal(6)">דו"ח אפס</div>
+                            <div id="opc-7" class="operation-field-card opc-7" onclick="openOPCModal(7)">
+                                תביעות לירידות ערך לפי סעיף 197
+                            </div>
+                        </div>
+                        <div id="modal-op" class="modal-op">
+                            <div class="close-modal-icon" onclick="closeOPCModal()">
+                                <span class="arrow-style">&#10140;</span><span class="ex-style">&#10006;</span>
+                            </div>
+                            <div class="modal-info">
+                                <div id="opc-info-1" class="opc-info">
+                                    <h2 class="modal-title-2">שווי שוק</h2>
+                                    שווי שוק מוגדר כתמורה הכספית או שווה ערך, שבה תבוצע עסקת מקרקעין בין מוכר מרצון
+                                    לקונה מרצון, בתנאי שוק חופשי, כאשר לצדדים לעיסקה יש את כל המידע הנדרש לביצוע העיסקה
+                                    והחשיפה של הנכס בשוק הייתה לאורך תקופה מספיקה, בהתאם לסוג הנכס, כאשר הצדדים נוהגים
+                                    בזהירות הראויה, מתוך מודעות וללא לחץ. במציאות הגדרה זו אינה מתקיימת במלואה. המידע
+                                    אינו שלם לשני הצדדים בעיסקה, קיימת מערכת לחצים הפועלת על הצדדים, תקופת הזמן לעיתים
+                                    אינה מספיקה, לכל צד יש את הערכותיו הסוביקטיביות. כתוצאה מכך בעסקאות של נכסים בעלי
+                                    מאפיינים דומים עשוי להתקבל פיזור מחירים בטווח ממוצע שבין 5%-10%, בהתאם למורכבות הנכס
+                                    ואף למעלה מזה בנכסים עם מאפיינים מיוחדים. הערך הסביר לנכס הינו בטווח פיזור מחירים.
+                                </div>
+                                <div id="opc-info-2" class="opc-info">
+                                    <!-- <div class="opc-content"> -->
+                                    <h2 class="modal-title-2">היטל השבחה</h2>
+                                    <span class="bigStyle">
+                                        חשוב לדעת – היטל השבחה אינו גזירה משמיים וניתן לערער עליו.
+                                    </span>
+                                    <br />
+                                    <br />
+                                    יש לזכור כי בהתאם להוראות החוק ניתן לערר על החיוב בהיטל השבחה עד 45 מיום קבלת שומת
+                                    הועדה מטעם הועדה המקומית.
+                                    <b> לאחר תום תקופה זו לא ניתן יהיה לערער והשומה תהא חלוטה. </b>
+                                    <br />
+                                    משרדנו בעל ניסיון רב בעריכת שומות נגדיות וייצוג לקוחות בדיונים מקצועיים, הן בועדות
+                                    ערר והן מול שמאים מכריעים.
+                                    <br />
+                                    <b>
+                                        במהלך השנים הפחית המשרד סכום מצטבר שנאמד במליוני שקלים בתשלומי היטל השבחה
+                                        ללקוחות המשרד.
+                                    </b>
+                                    <br />
+                                    <br />
+                                    אז מהו בכלל היטל השבחה?
+                                    <br /><br />
+
+                                    היטל ההשבחה הינו, למעשה, סוג של מס המשולם לועדה המקומית לתכנון ולבניה, כלומר
+                                    לעירייה/ למועצה (מס מוניציפאלי).
+                                    <br />
+                                    בהתאם להוראות סעיף 196 א' לחוק התכנון והבניה, היטל ההשבחה מוטל בגין עליית שווי
+                                    מקרקעין עקב אישור תכנית, בקשה להיתר בניה, מתן הקלה או התרת שימוש חורג.
+                                    <br /><br />
+
+                                    בעברית פשוטה – בקרות אחד המקרים המתוארים לעיל (מכירת הנכס או בקשה להיתר) הוועדה
+                                    המקומית מוציאה חוות דעת שנערכה ע"י שמאי מוסמך מטעמה, הבוחנת את כל התכניות ו/או
+                                    ההקלות שאושרו ע"י הועדה המקומית מהיום שבו נרכש הנכס ועד היום בו מבוקש המימוש (מכירה
+                                    או בקשה להיתר).
+                                    <br />
+                                    במידה ונמצאה השבחה שנבעה מאישור תכנית כלשהי, ישולם מס בשיעור של 50% מגובה ההשבחה
+                                    שנקבעה בשומת הוועדה, למועד אישור התכנית למתן תוקף.
+                                    <br /><br />
+
+                                    לדוגמא: <br />
+                                    <ul>
+                                        <li>
+                                            בשנת 2000 רכש ישראל ישראלי מגרש בשטח 500 מ"ר לבניית בית מגורים חד קומתי בשטח
+                                            מירבי של 100 מ"ר.
+                                        </li>
+                                        <li>
+                                            בשנת 2005 אישרה הועדה המקומית לתכנון ולבניה תכנית המאפשרת בניית קומה נוספת
+                                            ובכך הגדילה את השטח הבית לשטח מירבי של 200 מ"ר.
+                                        </li>
+                                        <li>
+                                            בשנת 2010 אישרה הועדה המקומית לתכנון ולבניה תכנית נוספת, המאפשרת בניית עליית
+                                            גג ובריכת שחייה.
+                                        </li>
+                                        <li>בשנת 2019 מכר מר ישראלי את המגרש, כשהוא ריק ופנוי.</li>
+                                    </ul>
+                                    <br />
+
+                                    היטל ההשבחה שיקבע במקרה הזה יורכב מהשבחה של 2 תכניות, כדלהלן:
+                                    <br />
+                                    <br />
+
+                                    השבחה ראשונה בגין הרחבת הזכויות לקומה נוספת, לפי הערכים שהיו בשנת 2005. <br />
+                                    ההשבחה השנייה הינה בגין הרחבת הזכויות לעליית גג ובריכה פרטית, לפי הערכים שהיו נהוגים
+                                    2010. <br />
+                                    ההשבחה מכל תכנית ותכנית תוצמד למדד המחירים לצרכן או למדד תשומות הבניה, לפי הנמוך
+                                    מביניהם, עד למועד תשלום ההיטל.
+                                    <br />
+                                    <br />
+
+                                    בהתאם להוראות תיקון 84 לחוק התכנון ובניה, ניתן לערער על קביעת שומת הוועדה בשני
+                                    הליכים אפשריים, כדלהלן: <br />
+                                    <ol>
+                                        <li>
+                                            בקשה למינוי שמאי מכריע והגשת שומה נגדית ("שומה אחרת"). <br />
+                                            בקשה זו מוגשת במקרה ויש השגה על גובה ההשבחה, מטענות מקצועיות – שמאיות.
+                                        </li>
+                                        <li>ערעור לועדת ערר, במקרה של השגה על עצם החיוב בהיטל השבחה.</li>
+                                    </ol>
+                                    <!-- </div> -->
+                                </div>
+                                <div id="opc-info-3" class="opc-info">
+                                    <h2 class="modal-title-2">אומדן והפחתת מיסוי מקרקעין</h2>
+                                    מיסוי מקרקעין משולם לרשות המיסים (להבדיל מהיטל השבחה המשולם לעירייה) וניתן להפרידו
+                                    לשני מיסים עיקריים:
+                                    <br />
+                                    <ol>
+                                        <li>
+                                            מס שבח – בהתאם להוראות החוק, מס השבח חל על המוכר בעת מכירת הנכס. החבות במס
+                                            תחול על השבח שנוצר מיום רכישת הנכס ועד מכירתו. שיעור המס תלוי בגורמים רבים
+                                            ובינהים שנת הרכישה, זכאות לפטורים מסויימים ומהות הנכס.
+                                            <br />
+                                            חשוב לדעת כי במקרים מסויימים ניתן להשיג על דרישת התשלום.
+                                            <br />
+                                            <b>
+                                                למשרדנו ניסיון רב בעריכת חוות דעת להפחתת מס שבח ובייצוג בדיונים מול
+                                                פקידי שומה.
+                                            </b>
+                                        </li>
+                                        <br />
+                                        <li>
+                                            מס רכישה – בהתאם להוראות החוק, מס הרכישה חל על רוכש זכויות במקרקעין, בהתאם
+                                            למדרגות המס ולסוג המקרקעין.
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div id="opc-info-4" class="opc-info">
+                                    <h2 class="modal-title-2">חוות דעת לבטוחות בנקאיות</h2>
+                                    חוות דעת לבטוחה בנקאית נכתבת בהתאם לתקן 19 לתקינה השמאית, שהינו תקן שמרני, שמטרתו
+                                    שיקוף ערך הנכס למטרת בטוחה.
+                                    <br />
+                                    <br />
+                                    <b> &nbsp;&nbsp;&nbsp; אז מה זה בעצם "ערך למטרת בטוחה"? </b>
+                                    <br />
+                                    על מנת שהבנק הממן יאשר את הלוואה, הוא רוצה לדעת מה יהיה שווי הנכס במימוש מיידי,
+                                    בניכוי כל המיסים הצפויים ובהתעלם מחריגות בניה ו/או פוטנציאל, ככל ואלו קיימים בנכס.
+                                    במילים פשוטות – כדי שהבנק יתן לכם את הכסף, הוא רוצה לדעת כמה ישאר לו ביד אם חלילה
+                                    יגיע למצב שלא תצליחו להחזיר את התשלומים החודשיים והוא יצטרך לעקל את הנכס.
+                                    <br />
+                                    <br />
+                                    <b> &nbsp;&nbsp;&nbsp; האם יכול להיות ש"שווי שוק" לא זהה ל"ערך למטרת בטוחה"? </b>
+                                    <br />
+                                    התשובה היא כן. בשוק החופשי, השוק לקוח בחשבון גם חריגות בניה. למשל, אם בבית מסויים
+                                    נבנה מרתף בחריגת בנייה, השוק יהיה מוכן לשלם על המרתף הזה (אולי לא את אותו הסכום אילו
+                                    היה המרתף מאושר אבל כן היה מוכן לשלם משהו). בהתאם להוראות התקינה השמאית, ערך למטרת
+                                    בטוחה לא מביא בחשבון בנייה שבוצעה ללא היתר בניה. במקרה הנ"ל הערך למטרת בטוחה יהיה
+                                    נמוך משווי הנכס בשוק החופשי.
+                                </div>
+                                <div id="opc-info-5" class="opc-info">
+                                    <h2 class="modal-title-2">שווי זכויות בנכסים המוחזקים ע"י דייר מוגן</h2>
+
+                                    במדינת ישראל ישנם מס' רב של נכסים המוחזקים ע"י דייר מוגן, בהתאם לחוק הגנת הדייר נוסח
+                                    משולב תשל"ב – 1972.
+                                    <br />
+                                    החוק חל על דיירים המחזיקים בדירות מגורים או בתי עסק שנרכשו תמורת דמי מפתח. רכישה
+                                    בדמי מפתח היא, למעשה, מעין הכלאה בין רכישת הנכס לשכירותו. בעסקה זו הדייר משלם מחיר
+                                    נמוך משווי השוק של אותו הנכס, ובתמורה מקבל הדייר חזקה על הנכס עד יום מותו, כאשר הוא
+                                    ממשיך לשלם דמי שכירות נמוכים באופן משמעותי מדמי השכירות הנהוגים בשוק.
+                                    <br />
+                                    <br />
+                                    בישראל, מרבית הנכסים המוחזקים ע"י דיירים מוגנים הינם בבעלות מדינת ישראל (ע"י רשות
+                                    הפתוח וחברת עמידר), ובכל זאת ישנם עוד מס' לא מועט של נכסים בבעלות פרטית, המוחזקים
+                                    בדיירות מוגנת.
+                                    <br />
+                                    <br />
+                                    כיום, עסקאות בדמי מפתח כמעט ואינן מתבצעות, בשל חוסר כדאיות כלכלית. מדינת ישראל מצידה
+                                    מנסה להיפטר מנכסים אלו ומוכרת אותם או לדיירים עצמם או לצד ג' במכרזים חופשיים.
+                                    <br />
+                                    <br />
+                                    אומדן שווי נכס המוחזק בדיירות הינו סוגיה מורכבת מאוד המחייבת הכרה של החוק ושל מערכת
+                                    היחסים המשפטית בין הבעלים לדייר המוגן.
+                                    <br />
+                                    <br />
+                                    <b>
+                                        למשרדנו ניסיון רב באומדן שווי נכסים המוחזקים בדיירות מוגנת ואומדן שווי זכויות
+                                        הדייר בנכסים אלו, לרבות קביעת עלויות פינוי הדייר במקרים בהם הבעלים מפנה את הדייר
+                                        מהנכס.
+                                    </b>
+                                </div>
+                                <div id="opc-info-6" class="opc-info">
+                                    <h2 class="modal-title-2">דו"ח אפס</h2>
+
+                                    דו"ח אפס (0) הינו חוות דעת שמאית – כלכלית המשקף את ההיתכנות הכלכלית בפרויקט נדל"ן
+                                    עבור היזם.
+                                    <br />
+                                    כאשר יזם מעוניין לבנות בניין, הוא צריך להכין תכנית כלכלית מקצועית שתשקף את כל הליכי
+                                    הפרויקט, החל מרכישת הקרקע, כלה בכל עלויות הבניה להקמת הבניין, לרבות מימון ומיסוי,
+                                    הכנסות הפרויקט ממכירת הדירות / היחידות בפרויקט, וזאת לצורך קביעת השורה התחתונה,
+                                    החשובה ביותר שהינה הרווח היזמי הצפוי.
+                                    <br />
+                                    <br />
+                                    למעשה, בדו"ח האפס השמאי מפרק את הפרויקט לגורמים כמו שווי הקרקע, עלויות הבניה, צפי
+                                    המכירות, מיסוי, עלויות מימון, תקופת בניית הפרויקט עד למסירת הדירות וע"י כך מאפשר
+                                    חיזוי מקצועי של רווחיות הפרויקט.
+                                    <br />
+                                    <br />
+                                    יזם אשר תולה את מימוש הפרויקט במימון בנקאי, יהא מחוייב להציג לבנק המלווה את התכנית
+                                    הכלכלית עליה הוא מסתמך ואת הרווח היזמי הצפוי לו.
+                                    <br />
+                                    <br />
+                                    <b>
+                                        יוחאי אהרונוב הינו שמאי מקרקעין מוסמך ובוגר הקורס לדו"חות אפס של מרכז הנדל"ן.
+                                    </b>
+                                </div>
+                                <div id="opc-info-7" class="opc-info">
+                                    <h2 class="modal-title-2">תביעות לירידות ערך לפי סעיף 197</h2>
+
+                                    סעיף 197 לחוק התכנון והבניה מאפשר תביעת פיצויים על פגיעה במקרקעין בגין אישור תכנית,
+                                    שלא בדרך הפקעה.
+                                    <br />
+                                    <br />
+                                    האפשרות לתבוע שמורה לבעלי זכויות במקרקעין המצויין בתחום התכנית או גובלים עימה.
+                                    <br />
+                                    <br />
+                                    ניתן להגיש את התביעה עד 3 שנים מיום אישור התכנית, בצירוף חוות דעת שמאית המוכיחה את
+                                    ירידת ערך המקרקעין.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-section noselect" id="links-container-title">
+                        <h1>קישורים רלוונטיים</h1>
+                    </div>
+                    <div id="links-container" class="links-container main-section noselect">
+                        <a class="link" onclick="openLinkInfo(1)">
+                            <div>אתר משרד המשפטים - הזמנת נסח טאבו</div>
+                        </a>
+                        <div class="explanation" id="ex-1">
+                            <a target="_blank" href="https://ecom.gov.il/voucherspa/input/440?clear=true"
+                                >לחץ כאן להזמנת נסח טאבו</a
+                            >
+                            <br /><br />
+                            נסח טאבו הינו שטר בעלות בנכס. בעזרת הנסח הנ"ל ניתן לקבל את כל המידע הנחוץ אודות הנכס,
+                            ההצמדות השייכות לו, הבעלים בנכס, הערות אזהרה, עיקולים על הנכס וכל פרט רלוונטי אחר. <br />
+                            על מנת לאתר את נסח הטאבו שלכם, הזינו באתר זה את פרטי הגוש, חלקה ותת חלקה (לא תמיד יש תת
+                            חלקה) והזמינו את הנסח. הזמנת הנסח לוקחת דקות אחדות וכרוכה בתשלום המשולם למשרד המשפטים.
+                        </div>
+                        <a
+                            class="link"
+                            target="_blank"
+                            href="https://land.gov.il/OwnershipAndRegistration/Pages/Ownership_and_Registration.aspx"
+                        >
+                            <div>אתר רשות מקרקעי ישראל</div>
+                        </a>
+                        <a class="link" onclick="openLinkInfo(2)">
+                            <div>אתר משרד המשפטים - איתור תיק בית משותף</div>
+                        </a>
+                        <div class="explanation" id="ex-2">
+                            <a target="_blank" href="https://fileextractor.justice.gov.il/tabu"
+                                >לחץ כאן לאיתור תיק בית משותף</a
+                            >
+                            <br /><br />
+                            תיק בית משותף הינו תיק רישום מקרקעין הכולל מסמכים בדבר רישום בניין או קובץ בניינים כ"בית
+                            משותף", כך שכל דירה ו/או יחידה קניינית כלשהי בבניין נרשמת כ"תת חלקה". <br />
+                            בין יתר המסמכים המצויים בתיק הבית המשותף, מצוי תשריט המאפשר לזהות את מיקום הדירה בבניין ואת
+                            ההצמדות השייכות לאותה דירה בבניין. <br />
+                            זיהוי הנכס בפועל מתאפשר תוך בחינת נסח הטאבו ותיק הבית הבית המשותף.<br /><br />
+
+                            על מנת לאתר את תיק הבית המשותף שלכם, הזינו באתר זה את פרטי הגוש והחלקה והזמינו את התיק.
+                            <br />
+                            הזמנת התיק לוקחת כמה שעות ועד כמה ימים, וכרוכה בתשלום המשולם למשרד המשפטים.
+                        </div>
+                    </div>
+                    <div class="main-section noselect" id="recommendations-container-title">
+                        <h1>המלצות</h1>
+                    </div>
+                    <div class="sticky-container whatsapp-bg">
+                        <div
+                            id="recommendations-container"
+                            class="recommendations-container main-section noselect"
+                            onscroll="switchScrollBtnsBack()"
+                        >
+                            <div id="scrollDownIcon" class="scroll-down-icon scroll-icon" onclick="scrollMessages()">
+                                <img src="./assets/icons/scroll-down-btn.png" />
+                            </div>
+                            <div id="scrollUpIcon" class="scroll-up-icon scroll-icon" onclick="scrollMessagesUp()">
+                                <img src="./assets/icons/scroll-up-btn.png" />
+                            </div>
+                            <div class="sticky-container">
+                                <div class="recommendation">
+                                    <div class="date">17/01/2019</div>
+                                    <div class="recommender user">אביתר ניימן, רמלה.</div>
+                                    <div class="recommendation-content user">
+                                        יוחאי ממש אחלה. אנחנו מאוד מרוצים מהעבודה שלו. הוא עבד איתנו באופן שוטף וגם
+                                        הבנקים קיבלו אותו למרות שהוא לא שמאי שלהם כי השמאות שלו באמת מספיק מקצועית. הוא
+                                        עשה עבודה מקיפה ואנחנו מאוד מבסוטים ממנו.
+                                        <div class="score"><b>ציון: </b>10</div>
+                                    </div>
+                                </div>
+                                <div class="recommendation">
+                                    <div class="date">15/02/2019</div>
+                                    <div class="recommendation-content user">
+                                        הוא מעולה! אני מרוצה מהשירות שלו ומהאמינות. התקשרתי אליו כמה פעמים והוא הסביר לי
+                                        הכל בצורה יפה ובסבלנות. הוא נתן דוח רציני, בדק את כל הנתונים ואני הייתי ממש
+                                        מרוצה ממנו.
+                                        <div class="score"><b>ציון: </b>10</div>
+                                    </div>
+                                    <div class="recommender user">אורית פנקס, רחובות.</div>
+                                </div>
+                                <div class="recommendation">
+                                    <div class="date">19/03/2019</div>
+                                    <div class="recommender user">גלי פ. נתניה.</div>
+                                    <div class="recommendation-content user">
+                                        חוויה טובה בהחלט. הגעתי אל יוחאי לאחר שראיתי עליו ביקורות טובות מאוד. הוא מסר לי
+                                        אינפורמציה יעילה בטלפון עוד לפני שסגרתי איתו. היה זמין והגיע במהירות כדי לבחון
+                                        ולצלם את הדירה. לאחר מכן העביר חוות דעת מקצועית במסגרת הזמנים שהובטחו על ידו.
+                                        מומלץ!
+                                        <div class="score"><b>ציון: </b>10</div>
+                                    </div>
+                                </div>
+                                <div class="recommendation">
+                                    <div class="date">16/05/2019</div>
+                                    <div class="recommendation-content user">
+                                        יוחאי היה מעולה, עשה עבודה טובה והיה נוח לעבוד מולו. אני מרוצה!
+                                        <div class="score"><b>ציון: </b>10</div>
+                                    </div>
+                                    <div class="recommender user">א. ט. ראשון לציון.</div>
+                                </div>
+                                <div class="recommendation">
+                                    <div class="date">15/06/2019</div>
+                                    <div class="recommender user">ערן גזית, הרצליה.</div>
+                                    <div class="recommendation-content user">
+                                        יוחאי היה בסדר גמור, עשה עבודה טובה ואני מרוצה מהעבודה מולו.
+                                        <div class="score"><b>ציון: </b>9</div>
+                                    </div>
+                                </div>
+                                <div class="recommendation">
+                                    <div class="date">15/07/2019</div>
+                                    <div class="recommendation-content user">
+                                        אני ממליצה עליו מאוד. הוא מקצועי, אמין, עומד בזמנים וזמין תמיד לשאלות. הלקוחות
+                                        שלי היו מאוד מרוצים מהיחס שלו, השירות שלו וחוות הדעת. הוא עושה עבודות לא
+                                        שגרתיות.
+                                        <div class="score"><b>ציון: </b>10</div>
+                                    </div>
+                                    <div class="recommender user">יקירה טובין, רמות מנשה.</div>
+                                </div>
+                                <div class="recommendation">
+                                    <div class="date">18/12/2019</div>
+                                    <div class="recommender user">יעקב סופי, רעננה.</div>
+                                    <div class="recommendation-content user">
+                                        הכל מעולה! הגיע בזמן, נחמד, מקצועי, עשה בדיקה יסודית, המחיר מצוין לדעתי, אני
+                                        מרוצה והגיש דוח מפורט ובזמן.
+                                        <div class="score"><b>ציון: </b>10</div>
+                                    </div>
+                                </div>
+                                <div class="sticky-container">
+                                    <div class="date date-title">2020! שנה טובה</div>
+                                    <div class="recommendation">
+                                        <div class="date">01/03/2020</div>
+                                        <div class="recommendation-content user">
+                                            הייתי מרוצה מהכל! הוא בחור מאוד נחמד וענייני, עוד לפני שבא הדריך אותי מה אני
+                                            צריך והיה מאוד מקצועי וזריז בשטח. נתן מחיר בסדר גמור ועמד בזמנים פיקס.
+                                            <div class="score"><b>ציון: </b>10</div>
+                                        </div>
+                                        <div class="recommender user">רועי אוזן, נתניה.</div>
+                                    </div>
+                                    <div class="recommendation">
+                                        <div class="date">07/05/2020</div>
+                                        <div class="recommender user">פרטי הלקוח שמורים במידרג</div>
+                                        <div class="recommendation-content user">
+                                            יוחאי היה מעולה, הוא היה נחמד כבר מהשיחה הראשונה שבה הסביר מה עושים ואיך
+                                            עושים שמאות, זה מה שגרם לי לבחור בו. עומד בזמנים, אפילו מקדים ואחר כך כשהיו
+                                            לי שאלות היה זמין וסבלני. בחור על הכיפאק.
+                                            <div class="score"><b>ציון: </b>10</div>
+                                        </div>
+                                    </div>
+                                    <div class="recommendation">
+                                        <div class="date">31/05/2020</div>
+                                        <div class="recommendation-content user">
+                                            יוחאי היה על הכיפאק. עשה שמאות עם התמחות בזכויות בניה לא מנוצלות כדי להבין
+                                            מה שווי הנכס מתוך התמורה. היה בקיא בחוקים, בחור אינטליגנט ומאוד מקצועי.
+                                            <div class="score"><b>ציון: </b>10</div>
+                                        </div>
+                                        <div class="recommender user">שי עמר, אור הנר.</div>
+                                    </div>
+                                    <div class="recommendation">
+                                        <div class="date">02/06/2020</div>
+                                        <div class="recommender user">יהודה אליאסי, נתניה.</div>
+                                        <div class="recommendation-content user">
+                                            הוא מעולה, אנחנו מאוד מרוצים ממנו ומהעבודה איתו. היה סבלני ונחמד.
+                                            <div class="score"><b>ציון: </b>10</div>
+                                        </div>
+                                    </div>
+                                    <div class="recommendation">
+                                        <div class="date">19/10/2020</div>
+                                        <div class="recommendation-content user">
+                                            נהניתי מאוד מן השירות של יוחאי. הוא היה גמיש במיוחד בתיאום הזמנים (הגעתי
+                                            מעיר אחרת), נועם דרכיו יוצר תחושה נעימה במשימה. באופן מיוחד, אני מעריכה את
+                                            ההתעקשות שלו להגיע לשורש של פרטים לא ברורים לגבי הנכס. מאד ממליצה.
+                                            <div class="score"><b>ציון: </b>10</div>
+                                        </div>
+                                        <div class="recommender user">ש. ל., חיפה.</div>
+                                    </div>
+                                </div>
+                                <div class="sticky-container">
+                                    <div class="date date-title">אתמול</div>
+                                    <div id="host-message" class="recommendation">
+                                        <div class="date">12:45</div>
+                                        <div class="recommendation-content host">שמחתי לעמוד לשרותכם!</div>
+                                        <div class="recommender host">יוחאי אהרונוב</div>
+                                    </div>
+                                </div>
+                                <div class="sticky-container">
+                                    <div id="lastDate" class="date date-title">אין הודעות חדשות</div>
+                                    <div id="hostMessage" class="recommendation">
+                                        <div id="curTime" class="date"></div>
+                                        <div class="recommendation-content host host-last">
+                                            אם גם אתם צריכים עזרה של שמאי מוסמך ומקצועי, אתם מוזמנים ליצור קשר בכל זמן.
+                                            <br />
+                                            <br />
+                                            &#128241; בנייד:
+                                            <a href="tel:+972542349294" class="contactInfoTitles">054-234-9294</a>
+                                            &#128187; במשרד:
+                                            <a href="tel:+972765409714" class="contactInfoTitles">076-540-9714</a>
+                                            <!-- <br/> -->
+                                            &#128172; בווטסאפ:
+                                            <a
+                                                href="https://wa.me/972542349294?text=%D7%94%D7%99%D7%99%20%D7%99%D7%95%D7%97%D7%90%D7%99%2C%0A%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%90%D7%9C%D7%99%D7%9A%20%D7%9E%D7%94%D7%90%D7%AA%D7%A8%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A2%D7%96%D7%A8%D7%AA%D7%9A%20%D7%91"
+                                                >054-234-9294</a
+                                            >
+                                            <!-- <br/> -->
+                                            &#9993; או במייל:
+                                            <a
+                                                href="mailto:y.a.shamaut@gmail.com?subject=%D7%A4%D7%A0%D7%99%D7%99%D7%94%20%D7%9E%D7%94%D7%90%D7%AA%D7%A8"
+                                                class="contactInfoTitles"
+                                                >y.a.shamaut@gmail.com</a
+                                            >
+                                        </div>
+                                        <div class="recommender host">יוחאי אהרונוב</div>
+                                    </div>
+                                </div>
+                                <!-- כאן -->
+                            </div>
+                        </div>
+                        <div id="bottom-msg" class="sticky-container bottom-msg">
+                            <div class="write-a-message">
+                                <div class="message-input-container">
+                                    <!-- <textarea class="message-input" type="text"></textarea> -->
+                                    <div class="chat-symbols">
+                                        <span data-testid="smiley" data-icon="smiley" class=""
+                                            ><svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                                width="24"
+                                                height="24"
+                                            >
+                                                <path
+                                                    fill="currentColor"
+                                                    d="M9.153 11.603c.795 0 1.439-.879 1.439-1.962s-.644-1.962-1.439-1.962-1.439.879-1.439 1.962.644 1.962 1.439 1.962zm-3.204 1.362c-.026-.307-.131 5.218 6.063 5.551 6.066-.25 6.066-5.551 6.066-5.551-6.078 1.416-12.129 0-12.129 0zm11.363 1.108s-.669 1.959-5.051 1.959c-3.505 0-5.388-1.164-5.607-1.959 0 0 5.912 1.055 10.658 0zM11.804 1.011C5.609 1.011.978 6.033.978 12.228s4.826 10.761 11.021 10.761S23.02 18.423 23.02 12.228c.001-6.195-5.021-11.217-11.216-11.217zM12 21.354c-5.273 0-9.381-3.886-9.381-9.159s3.942-9.548 9.215-9.548 9.548 4.275 9.548 9.548c-.001 5.272-4.109 9.159-9.382 9.159zm3.108-9.751c.795 0 1.439-.879 1.439-1.962s-.644-1.962-1.439-1.962-1.439.879-1.439 1.962.644 1.962 1.439 1.962z"
+                                                ></path></svg
+                                        ></span>
+                                    </div>
+                                    <textarea
+                                        placeholder="הקלד הודעה"
+                                        id="messageValue"
+                                        class="message-input"
+                                        name="text"
+                                        style="height: 27px"
+                                        oninput='this.style.height = "23px";this.style.height = this.scrollHeight + "px"'
+                                    ></textarea>
+                                    <div class="chat-symbols">
+                                        <span data-testid="clip" data-icon="clip" class=""
+                                            ><svg
+                                                style="display: block; transform: scale(-1, 1)"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                                width="24"
+                                                height="24"
+                                            >
+                                                <path
+                                                    fill="currentColor"
+                                                    d="M1.816 15.556v.002c0 1.502.584 2.912 1.646 3.972s2.472 1.647 3.974 1.647a5.58 5.58 0 0 0 3.972-1.645l9.547-9.548c.769-.768 1.147-1.767 1.058-2.817-.079-.968-.548-1.927-1.319-2.698-1.594-1.592-4.068-1.711-5.517-.262l-7.916 7.915c-.881.881-.792 2.25.214 3.261.959.958 2.423 1.053 3.263.215l5.511-5.512c.28-.28.267-.722.053-.936l-.244-.244c-.191-.191-.567-.349-.957.04l-5.506 5.506c-.18.18-.635.127-.976-.214-.098-.097-.576-.613-.213-.973l7.915-7.917c.818-.817 2.267-.699 3.23.262.5.501.802 1.1.849 1.685.051.573-.156 1.111-.589 1.543l-9.547 9.549a3.97 3.97 0 0 1-2.829 1.171 3.975 3.975 0 0 1-2.83-1.173 3.973 3.973 0 0 1-1.172-2.828c0-1.071.415-2.076 1.172-2.83l7.209-7.211c.157-.157.264-.579.028-.814L11.5 4.36a.572.572 0 0 0-.834.018l-7.205 7.207a5.577 5.577 0 0 0-1.645 3.971z"
+                                                ></path></svg
+                                        ></span>
+                                    </div>
+                                    <img
+                                        height="24"
+                                        width="24"
+                                        style="padding: 10px"
+                                        src="./assets/icons/cameragray.png"
+                                    />
+                                </div>
+                                <div class="send-btn" onclick="sendMsg();">
+                                    <span data-testid="send" data-icon="send" class="_1ZWDD"
+                                        ><svg
+                                            style="display: block; transform: scale(-1, 1)"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            width="19"
+                                            height="19"
+                                        >
+                                            <path
+                                                fill="currentColor"
+                                                d="M1.101 21.757L23.8 12.028 1.101 2.3l.011 7.912 13.623 1.816-13.623 1.817-.011 7.912z"
+                                            ></path></svg
+                                    ></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-section noselect">
+                        <h1>צור קשר</h1>
+                    </div>
+                    <div class="last-section noselect">
+                        <div class="mapouter">
+                            <div class="gmap_canvas">
+                                <iframe
+                                    class="map"
+                                    width="300"
+                                    height="500"
+                                    id="gmap_canvas"
+                                    src="https://maps.google.com/maps?q=%D7%92%D7%9C%D7%95%D7%A1%D7%A7%D7%99%D7%9F%2034%2C%20%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                    frameborder="0"
+                                    scrolling="no"
+                                    marginheight="0"
+                                    marginwidth="0"
+                                ></iframe>
+                            </div>
+                            <style>
+                                .mapouter {
+                                    position: relative;
+                                    text-align: right;
+                                    height: 500px;
+                                    width: 600px;
+                                }
+                                .gmap_canvas {
+                                    overflow: hidden;
+                                    background: none !important;
+                                    height: 500px;
+                                    width: 600px;
+                                }
+                            </style>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contactInfoTitles">
+                                <span class="makeWhite">שד' גלוסקין 34, רחובות</span>
+                            </p>
+                            <br />
+                            <a href="tel:+972542349294" class="contactInfoTitles">054-234-9294</a>
+                            <br />
+
+                            <a href="tel:+972765409714" class="contactInfoTitles">076-540-9714</a>
+                            <br />
+                            <a
+                                href="mailto:y.a.shamaut@gmail.com?subject=%D7%A4%D7%A0%D7%99%D7%99%D7%94%20%D7%9E%D7%94%D7%90%D7%AA%D7%A8"
+                                class="contactInfoTitles"
+                                >y.a.shamaut@gmail.com</a
+                            >
+                        </div>
+                        <a
+                            href="https://wa.me/972542349294?text=%D7%94%D7%99%D7%99%20%D7%99%D7%95%D7%97%D7%90%D7%99%2C%0A%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%90%D7%9C%D7%99%D7%9A%20%D7%9E%D7%94%D7%90%D7%AA%D7%A8%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A2%D7%96%D7%A8%D7%AA%D7%9A%20%D7%91"
+                        >
+                            <img id="whatsappLogo" src="./assets/icons/whatsapp.png" />
+                        </a>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <img class="logo" src="./assets/icons/shamaimLogo.png" />
+            </footer>
+        </div>
+    </body>
+    <script src="./main.js"></script>
+    <script src="./search.js"></script>
+    <script src="./send-msg.js"></script>
+</html>
