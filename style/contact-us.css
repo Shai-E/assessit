@@ -1,0 +1,22 @@
+.map, .gmap_canvas, .mapouter {
+    height: inherit;
+    max-height: 80vh;
+    max-width:300px;
+}
+
+.last-section {
+    height: 80vh;
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info > a {
+    color:black;
+}
+
+#whatsappLogo{
+    height: 100px;
+}

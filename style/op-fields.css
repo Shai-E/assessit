@@ -1,0 +1,111 @@
+.operation-fields{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 3px;
+}
+
+.operation-field-card{
+    border: 5px solid rgba(190, 190, 190, 0.205);
+    background-color: rgba(255, 255, 255, 0.87);
+    border-radius: 3px;
+    grid-column: span 3;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 20vh;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.opc-1, .opc-2, .opc-3 {
+    grid-column: span 4;
+}
+
+.opc-5:hover {
+    background: #ffebcd;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,235,205,1) 100%);
+    border: 5px solid transparent;
+}
+
+.opc-2:hover {
+    background: #f0ffcd;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, #f0ffcd 100%);
+    border: 5px solid transparent;
+}
+
+.opc-3:hover {
+    background: #cdf5ff;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, #cdf5ff 100%);
+    border: 5px solid transparent;
+}
+
+.opc-4:hover {
+    background: #fff896;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, #fff896 100%);
+    border: 5px solid transparent;
+}
+
+.opc-1:hover {
+    background: #ff9797;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, #ff9797 100%);
+    border: 5px solid transparent;
+}
+
+.opc-7:hover {
+    background: #e6b0ff;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, #e6b0ff 100%);
+    border: 5px solid transparent;
+}
+
+.opc-6:hover {
+    background: #766cff;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, #766cff 100%);
+    border: 5px solid transparent;
+}
+
+.modal-op {
+    display: none;
+    grid-template-columns: repeat(12, 1fr);
+    height: inherit;
+    margin: auto;
+    justify-content: center;
+    grid-column: span 12;
+    position: relative;
+}
+
+.close-modal-icon {
+    position: absolute;
+    top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: x-large;
+    color: rgb(95, 95, 95);
+    
+}
+.close-modal-icon:hover {
+    color: black;
+}
+
+.ex-style {
+    display: none;
+}
+
+.modal-info{
+    margin: 20px 50px;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    grid-column: span 12;
+}
+
+.modal-title-2{
+    margin-top: 0;
+}
+
+.main-section:nth-of-type(5){
+    background-color: #e2d8f0d0;
+    overflow: auto;
+}
